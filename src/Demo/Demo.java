@@ -7,6 +7,7 @@ import javax.persistence.Query;
 import java.sql.Date;
 import java.time.LocalDate;
 import java.time.ZoneId;
+import java.util.Dictionary;
 import java.util.List;
 
 public class Demo {
@@ -22,10 +23,17 @@ public class Demo {
         for (Person p : result){
             System.out.println(p.getsSSN() + ": " + p.getFirstName() + " " + p.getLastName());
         }
-        insertAddress(em,result.get(3));
+        //insertAddress(em,result.get(3));
+        List<Person> p = query1(em);
         em.close();
         factory.close();
     }
+
+    private static List<Person> query1(EntityManager em) {
+        List<Person> p = em.createQuery("SELECT distinct p from Person p join Address a on p.SSN = a.id.SSN WHERE p.isAwesome = true ORDER BY a.city",Person.class).getResultList();
+        return p;
+    }
+
 
 
     private static void insertPerson(EntityManager em ){
@@ -45,13 +53,14 @@ public class Demo {
     private static void insertAddress(EntityManager em,Person p) {
         em.getTransaction().begin();
         Address newAddress = new Address();
-        newAddress.setId(new AddressID("5555050670",(short)3));
+        newAddress.setId(new AddressID(p.getsSSN(),(short)1));
         newAddress.setCountry("Austria");
-        newAddress.setCity("Linz");
+        newAddress.setCity("Leonding");
         newAddress.setStreet("Straße");
-        newAddress.setStreetNo((short)1);
+        newAddress.setStreetNo((short)3);
         newAddress.setPerson(p);
         em.persist(newAddress);
         em.getTransaction().commit();
     }
+
 }
