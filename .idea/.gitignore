@@ -228,3 +228,5 @@ buildNumber.properties
 .flattened-pom.xml
 
 # End of https://www.gitignore.io/api/java,maven,jboss6,intellij,database,jetbrains
+# Datasource local storage ignored files
+/dataSources/
