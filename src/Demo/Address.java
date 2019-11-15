@@ -12,7 +12,7 @@ public class Address {
     private short StreetNo;
 
     @ManyToOne()
-    @JoinColumn(name = "ssn")
+    @JoinColumn(name = "ssn",insertable = false,updatable = false)
     private Person person;
 
     public AddressID getId() {

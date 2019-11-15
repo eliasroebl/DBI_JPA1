@@ -1,24 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c0b0895f-edc1-4b18-8bfa-53eb5b6b71f4" name="Default Changelist" comment="Working JPA">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/JPA_2_2_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/com_vladmihalcea_hibernate_types_52_2_5_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_hibernate_hibernate_entitymanager_5_4_8_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_postgresql_postgresql_42_2_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JPADemoDBI.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javax.persistence.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Demo/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Demo/Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Demo/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+    <list default="true" id="c0b0895f-edc1-4b18-8bfa-53eb5b6b71f4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JPADemoDBI/Demo/Demo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JPADemoDBI/Demo/Demo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JPADemoDBI/Demo/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JPADemoDBI/Demo/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Demo/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Demo/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Demo/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Demo/Demo.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -171,6 +159,16 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand />
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -181,7 +179,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1573803527473</updated>
-      <workItem from="1573803532324" duration="8186000" />
+      <workItem from="1573803532324" duration="9663000" />
+      <workItem from="1573815280582" duration="268000" />
+      <workItem from="1573816175820" duration="1055000" />
     </task>
     <task id="LOCAL-00001" summary="Gitignore">
       <created>1573807477231</created>
@@ -204,16 +204,48 @@
       <option name="project" value="LOCAL" />
       <updated>1573807709869</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added relations and Address class">
+      <created>1573813821127</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1573813821127</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Gitignore" />
     <MESSAGE value="Working JPA" />
     <MESSAGE value="Added Entity Person" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Entity Person" />
+    <MESSAGE value="Added relations and Address class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added relations and Address class" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Demo/Demo.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
