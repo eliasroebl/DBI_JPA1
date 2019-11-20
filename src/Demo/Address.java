@@ -11,9 +11,7 @@ public class Address {
     private String Street;
     private short StreetNo;
 
-    @ManyToOne()
-    @JoinColumn(name = "ssn",insertable = false,updatable = false)
-    private Person person;
+
 
     public AddressID getId() {
         return id;
@@ -55,11 +53,4 @@ public class Address {
         StreetNo = streetNo;
     }
 
-    public Person getPerson() {
-        return person;
-    }
-
-    public void setPerson(Person person) {
-        this.person = person;
-    }
 }

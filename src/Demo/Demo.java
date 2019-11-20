@@ -24,14 +24,14 @@ public class Demo {
             System.out.println(p.getsSSN() + ": " + p.getFirstName() + " " + p.getLastName());
         }
         //insertAddress(em,result.get(3));
-        List<Person> p = query1(em);
+        List<String> cities = query1(em);
         em.close();
         factory.close();
     }
 
-    private static List<Person> query1(EntityManager em) {
-        List<Person> p = em.createQuery("SELECT distinct p from Person p join Address a on p.SSN = a.id.SSN WHERE p.isAwesome = true ORDER BY a.city",Person.class).getResultList();
-        return p;
+    private static List<String> query1(EntityManager em) {
+        List<String> cities = em.createQuery("select distinct a.city from Person p join p.addresses a where p.isAwesome = true order by a.city").getResultList();
+        return cities;
     }
 
 
@@ -53,12 +53,14 @@ public class Demo {
     private static void insertAddress(EntityManager em,Person p) {
         em.getTransaction().begin();
         Address newAddress = new Address();
-        newAddress.setId(new AddressID(p.getsSSN(),(short)1));
+        AddressID addressID = new AddressID(p);
+        newAddress.setId(addressID);
         newAddress.setCountry("Austria");
         newAddress.setCity("Leonding");
         newAddress.setStreet("Straße");
         newAddress.setStreetNo((short)3);
-        newAddress.setPerson(p);
+        addressID.setPerson(p);
+
         em.persist(newAddress);
         em.getTransaction().commit();
     }
