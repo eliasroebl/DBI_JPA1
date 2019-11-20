@@ -19,7 +19,7 @@ public class Person {
     private boolean isAwesome;
     private Double awesomeness;
     private BigDecimal wealth;
-    @OneToMany(mappedBy = "person", cascade = CascadeType.PERSIST)
+    @OneToMany(mappedBy = "id.person", cascade = CascadeType.PERSIST)
     private List<Address> addresses = new ArrayList<>();
 
 
