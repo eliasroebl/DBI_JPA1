@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c0b0895f-edc1-4b18-8bfa-53eb5b6b71f4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Demo/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Demo/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Demo/AddressID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Demo/AddressID.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Demo/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Demo/Demo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Demo/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Demo/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Demo/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Demo/Order.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +29,10 @@
       </path>
     </expand>
     <select />
+  </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="hideWarnings" value="true" />
+    <option name="HIDE_WARNINGS" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -129,22 +130,7 @@
     <option name="allServicesViewState">
       <serviceView>
         <treeState>
-          <expand>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@605cea00" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@605cea00" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@36f0af14" type="9fbbdea:ServiceModel$ServiceNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@605cea00" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@71ac2019" type="9fbbdea:ServiceModel$ServiceNode" />
-            </path>
-          </expand>
+          <expand />
           <select />
         </treeState>
       </serviceView>
@@ -164,7 +150,7 @@
       <workItem from="1573815280582" duration="268000" />
       <workItem from="1573816175820" duration="6626000" />
       <workItem from="1574063408641" duration="435000" />
-      <workItem from="1574251868827" duration="3802000" />
+      <workItem from="1574251868827" duration="6704000" />
     </task>
     <task id="LOCAL-00001" summary="Gitignore">
       <created>1573807477231</created>
@@ -215,7 +201,35 @@
       <option name="project" value="LOCAL" />
       <updated>1573825266325</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Fixed Query 1">
+      <created>1574255876634</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1574255876634</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added Person">
+      <created>1574255902758</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1574255902758</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Fixed Query 1">
+      <created>1574255922611</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1574255922611</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Added Order">
+      <created>1574256512933</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1574256512933</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,6 +256,9 @@
     <MESSAGE value="Add insertAddress and Bug fixed" />
     <MESSAGE value="Added InsertAddress" />
     <MESSAGE value="Implemented Query 1(Retrieved all awesome Person)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented Query 1(Retrieved all awesome Person)" />
+    <MESSAGE value="Added Person" />
+    <MESSAGE value="Fixed Query 1" />
+    <MESSAGE value="Added Order" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Order" />
   </component>
 </project>
