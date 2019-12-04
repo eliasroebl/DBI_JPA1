@@ -1,26 +1,48 @@
 package Demo;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.LinkedList;
+import java.util.List;
 
 @Entity
 public class Order {
+    @Id
     private int id;
-    @EmbeddedId
-    private AddressID addressID;
+
     private Date orderDate;
     private short orderState;
+    @OneToMany(mappedBy = "id.order",cascade = CascadeType.PERSIST)
+    List<OrderItem> orderItems = new LinkedList<OrderItem>();
+
+
+    @ManyToOne
+    @JoinColumns({
+            @JoinColumn(name = "SSN", referencedColumnName = "SSN"),
+            @JoinColumn(name = "addressNo", referencedColumnName = "addressNo")
+    })
+    private Address address;
+
 
     public int getId() {
         return id;
     }
 
-    public AddressID getAddressID() {
-        return addressID;
+    public List<OrderItem> getOrderItems() {
+        return orderItems;
     }
 
-    public void setAddressID(AddressID addressID) {
-        this.addressID = addressID;
+    public void setOrderItems(List<OrderItem> orderItems) {
+        this.orderItems = orderItems;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
     }
 
     public Date getOrderDate() {

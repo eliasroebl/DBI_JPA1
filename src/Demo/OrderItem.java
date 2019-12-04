@@ -4,9 +4,23 @@ import javax.persistence.*;
 
 @Entity
 public class OrderItem {
-    @Id
-    private int id;
-    //TODO: Annotations
-    private int product_id;
+    @EmbeddedId
+    private OrderItemID id;
     private int amount;
+
+    public OrderItemID getId() {
+        return id;
+    }
+
+    public void setId(OrderItemID id) {
+        this.id = id;
+    }
+
+    public int getAmount() {
+        return amount;
+    }
+
+    public void setAmount(int amount) {
+        this.amount = amount;
+    }
 }
