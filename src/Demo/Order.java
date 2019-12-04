@@ -5,7 +5,6 @@ import java.util.Date;
 
 @Entity
 public class Order {
-    @Id
     private int id;
     @EmbeddedId
     private AddressID addressID;
