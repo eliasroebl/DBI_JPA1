@@ -13,8 +13,8 @@ public class Order {
 
     private Date orderDate;
     private short orderState;
-    @OneToMany(mappedBy = "id.order",cascade = CascadeType.PERSIST)
-    List<OrderItem> orderItems = new LinkedList<OrderItem>();
+    @OneToMany(mappedBy = "id.order",cascade = {CascadeType.PERSIST,CascadeType.MERGE})
+    List<OrderItem> orderItems = new ArrayList<OrderItem>();
 
 
     @ManyToOne
@@ -24,6 +24,7 @@ public class Order {
     })
     private Address address;
 
+    public Order(){}
 
     public int getId() {
         return id;

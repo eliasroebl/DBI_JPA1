@@ -8,6 +8,13 @@ public class OrderItem {
     private OrderItemID id;
     private int amount;
 
+    public OrderItem(){}
+
+    public OrderItem(OrderItemID id, int amount) {
+        this.id = id;
+        this.amount = amount;
+    }
+
     public OrderItemID getId() {
         return id;
     }

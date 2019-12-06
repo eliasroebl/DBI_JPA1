@@ -10,7 +10,7 @@ import java.io.Serializable;
 public class OrderItemID implements Serializable {
 
     @ManyToOne()
-    @JoinColumn(name = "id",referencedColumnName = "id")
+    @JoinColumn(name = "orderId", referencedColumnName = "id")
     private Order order;
 
     @ManyToOne()
@@ -19,6 +19,11 @@ public class OrderItemID implements Serializable {
 
 
     public OrderItemID(){}
+
+    public OrderItemID(Order o, Product p){
+        this.order = o;
+        this.product = p;
+    }
 
     public Order getOrder() { return order; }
 

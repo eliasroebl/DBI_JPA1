@@ -11,6 +11,12 @@ public class Product {
     private String description;
     private BigDecimal price;
 
+    public Product(int id,String description, BigDecimal price) {
+        this.id = id;
+        this.description = description;
+        this.price = price;
+    }
+
     public int getId() {
         return id;
     }
