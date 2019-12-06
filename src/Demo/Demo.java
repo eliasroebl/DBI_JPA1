@@ -6,6 +6,7 @@ import java.math.BigDecimal;
 import java.sql.Date;
 import java.time.LocalDate;
 import java.time.ZoneId;
+import java.util.ArrayList;
 import java.util.Dictionary;
 import java.util.LinkedList;
 import java.util.List;
@@ -33,7 +34,7 @@ public class Demo {
         //insertProduct(em, p1);
         //insertProduct(em, p2)
 
-        List<OrderItem> orderItems = new LinkedList<OrderItem>();
+        /*List<OrderItem> orderItems = new ArrayList<OrderItem>();
 
         Order order = new Order();
 
@@ -49,7 +50,7 @@ public class Demo {
         order.setOrderState((short)1);
         order.setAddress((Address) em.createQuery("select a from Address a").getResultList().get(0));
 
-        insertOrder(em,order);
+        insertOrder(em,order);*/
 
 
 

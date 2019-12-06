@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0b0895f-edc1-4b18-8bfa-53eb5b6b71f4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JPADemoDBI/Demo/Demo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JPADemoDBI/Demo/Demo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JPADemoDBI/Demo/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JPADemoDBI/Demo/Order.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JPADemoDBI/Demo/OrderItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JPADemoDBI/Demo/OrderItem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JPADemoDBI/Demo/OrderItemID.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JPADemoDBI/Demo/OrderItemID.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JPADemoDBI/Demo/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JPADemoDBI/Demo/Product.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Demo/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Demo/Demo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Demo/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Demo/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Demo/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Demo/OrderItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Demo/OrderItemID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Demo/OrderItemID.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Demo/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Demo/Product.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -185,7 +175,7 @@
       <workItem from="1575462357716" duration="8818000" />
       <workItem from="1575553261984" duration="31000" />
       <workItem from="1575555685954" duration="210000" />
-      <workItem from="1575590288576" duration="253000" />
+      <workItem from="1575590288576" duration="614000" />
     </task>
     <task id="LOCAL-00001" summary="Gitignore">
       <created>1573807477231</created>
@@ -299,7 +289,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575467884881</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Added Queries and Inserts.">
+      <created>1575590667740</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1575590667740</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,6 +331,7 @@
     <MESSAGE value="Fixed bug in order" />
     <MESSAGE value="Added Embedded Key for Order fixed relations" />
     <MESSAGE value="Added Embedded Key for Order fixed relations 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Embedded Key for Order fixed relations 2" />
+    <MESSAGE value="Added Queries and Inserts." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Queries and Inserts." />
   </component>
 </project>
